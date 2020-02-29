@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F44DDA1E240AF3F200F0A61C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DDA1D240AF3F200F0A61C /* AppDelegate.swift */; };
+		F44DDA20240AF3F200F0A61C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = F44DDA1F240AF3F200F0A61C /* art.scnassets */; };
+		F44DDA22240AF3F200F0A61C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DDA21240AF3F200F0A61C /* ViewController.swift */; };
+		F44DDA25240AF3F200F0A61C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44DDA23240AF3F200F0A61C /* Main.storyboard */; };
+		F44DDA27240AF3F400F0A61C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F44DDA26240AF3F400F0A61C /* Assets.xcassets */; };
+		F44DDA2A240AF3F400F0A61C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44DDA28240AF3F400F0A61C /* LaunchScreen.storyboard */; };
+		F44DDA35240AF3F400F0A61C /* ARMuseumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DDA34240AF3F400F0A61C /* ARMuseumsTests.swift */; };
+		F44DDA40240AF3F400F0A61C /* ARMuseumsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DDA3F240AF3F400F0A61C /* ARMuseumsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F44DDA31240AF3F400F0A61C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44DDA12240AF3F200F0A61C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44DDA19240AF3F200F0A61C;
+			remoteInfo = ARMuseums;
+		};
+		F44DDA3C240AF3F400F0A61C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F44DDA12240AF3F200F0A61C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F44DDA19240AF3F200F0A61C;
+			remoteInfo = ARMuseums;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F44DDA1A240AF3F200F0A61C /* ARMuseums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARMuseums.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44DDA1D240AF3F200F0A61C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F44DDA1F240AF3F200F0A61C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		F44DDA21240AF3F200F0A61C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F44DDA24240AF3F200F0A61C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F44DDA26240AF3F400F0A61C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F44DDA29240AF3F400F0A61C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F44DDA2B240AF3F400F0A61C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44DDA30240AF3F400F0A61C /* ARMuseumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARMuseumsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44DDA34240AF3F400F0A61C /* ARMuseumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMuseumsTests.swift; sourceTree = "<group>"; };
+		F44DDA36240AF3F400F0A61C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44DDA3B240AF3F400F0A61C /* ARMuseumsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARMuseumsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44DDA3F240AF3F400F0A61C /* ARMuseumsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMuseumsUITests.swift; sourceTree = "<group>"; };
+		F44DDA41240AF3F400F0A61C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F44DDA17240AF3F200F0A61C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44DDA2D240AF3F400F0A61C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44DDA38240AF3F400F0A61C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F44DDA11240AF3F200F0A61C = {
+			isa = PBXGroup;
+			children = (
+				F44DDA1C240AF3F200F0A61C /* ARMuseums */,
+				F44DDA33240AF3F400F0A61C /* ARMuseumsTests */,
+				F44DDA3E240AF3F400F0A61C /* ARMuseumsUITests */,
+				F44DDA1B240AF3F200F0A61C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F44DDA1B240AF3F200F0A61C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F44DDA1A240AF3F200F0A61C /* ARMuseums.app */,
+				F44DDA30240AF3F400F0A61C /* ARMuseumsTests.xctest */,
+				F44DDA3B240AF3F400F0A61C /* ARMuseumsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F44DDA1C240AF3F200F0A61C /* ARMuseums */ = {
+			isa = PBXGroup;
+			children = (
+				F44DDA1D240AF3F200F0A61C /* AppDelegate.swift */,
+				F44DDA1F240AF3F200F0A61C /* art.scnassets */,
+				F44DDA21240AF3F200F0A61C /* ViewController.swift */,
+				F44DDA23240AF3F200F0A61C /* Main.storyboard */,
+				F44DDA26240AF3F400F0A61C /* Assets.xcassets */,
+				F44DDA28240AF3F400F0A61C /* LaunchScreen.storyboard */,
+				F44DDA2B240AF3F400F0A61C /* Info.plist */,
+			);
+			path = ARMuseums;
+			sourceTree = "<group>";
+		};
+		F44DDA33240AF3F400F0A61C /* ARMuseumsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F44DDA34240AF3F400F0A61C /* ARMuseumsTests.swift */,
+				F44DDA36240AF3F400F0A61C /* Info.plist */,
+			);
+			path = ARMuseumsTests;
+			sourceTree = "<group>";
+		};
+		F44DDA3E240AF3F400F0A61C /* ARMuseumsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F44DDA3F240AF3F400F0A61C /* ARMuseumsUITests.swift */,
+				F44DDA41240AF3F400F0A61C /* Info.plist */,
+			);
+			path = ARMuseumsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F44DDA19240AF3F200F0A61C /* ARMuseums */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44DDA44240AF3F400F0A61C /* Build configuration list for PBXNativeTarget "ARMuseums" */;
+			buildPhases = (
+				F44DDA16240AF3F200F0A61C /* Sources */,
+				F44DDA17240AF3F200F0A61C /* Frameworks */,
+				F44DDA18240AF3F200F0A61C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARMuseums;
+			productName = ARMuseums;
+			productReference = F44DDA1A240AF3F200F0A61C /* ARMuseums.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F44DDA2F240AF3F400F0A61C /* ARMuseumsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44DDA47240AF3F400F0A61C /* Build configuration list for PBXNativeTarget "ARMuseumsTests" */;
+			buildPhases = (
+				F44DDA2C240AF3F400F0A61C /* Sources */,
+				F44DDA2D240AF3F400F0A61C /* Frameworks */,
+				F44DDA2E240AF3F400F0A61C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F44DDA32240AF3F400F0A61C /* PBXTargetDependency */,
+			);
+			name = ARMuseumsTests;
+			productName = ARMuseumsTests;
+			productReference = F44DDA30240AF3F400F0A61C /* ARMuseumsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F44DDA3A240AF3F400F0A61C /* ARMuseumsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F44DDA4A240AF3F400F0A61C /* Build configuration list for PBXNativeTarget "ARMuseumsUITests" */;
+			buildPhases = (
+				F44DDA37240AF3F400F0A61C /* Sources */,
+				F44DDA38240AF3F400F0A61C /* Frameworks */,
+				F44DDA39240AF3F400F0A61C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F44DDA3D240AF3F400F0A61C /* PBXTargetDependency */,
+			);
+			name = ARMuseumsUITests;
+			productName = ARMuseumsUITests;
+			productReference = F44DDA3B240AF3F400F0A61C /* ARMuseumsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F44DDA12240AF3F200F0A61C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Oscar Odon";
+				TargetAttributes = {
+					F44DDA19240AF3F200F0A61C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					F44DDA2F240AF3F400F0A61C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F44DDA19240AF3F200F0A61C;
+					};
+					F44DDA3A240AF3F400F0A61C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F44DDA19240AF3F200F0A61C;
+					};
+				};
+			};
+			buildConfigurationList = F44DDA15240AF3F200F0A61C /* Build configuration list for PBXProject "ARMuseums" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F44DDA11240AF3F200F0A61C;
+			productRefGroup = F44DDA1B240AF3F200F0A61C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F44DDA19240AF3F200F0A61C /* ARMuseums */,
+				F44DDA2F240AF3F400F0A61C /* ARMuseumsTests */,
+				F44DDA3A240AF3F400F0A61C /* ARMuseumsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F44DDA18240AF3F200F0A61C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44DDA20240AF3F200F0A61C /* art.scnassets in Resources */,
+				F44DDA2A240AF3F400F0A61C /* LaunchScreen.storyboard in Resources */,
+				F44DDA27240AF3F400F0A61C /* Assets.xcassets in Resources */,
+				F44DDA25240AF3F200F0A61C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44DDA2E240AF3F400F0A61C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44DDA39240AF3F400F0A61C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F44DDA16240AF3F200F0A61C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44DDA22240AF3F200F0A61C /* ViewController.swift in Sources */,
+				F44DDA1E240AF3F200F0A61C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44DDA2C240AF3F400F0A61C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44DDA35240AF3F400F0A61C /* ARMuseumsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44DDA37240AF3F400F0A61C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44DDA40240AF3F400F0A61C /* ARMuseumsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F44DDA32240AF3F400F0A61C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F44DDA19240AF3F200F0A61C /* ARMuseums */;
+			targetProxy = F44DDA31240AF3F400F0A61C /* PBXContainerItemProxy */;
+		};
+		F44DDA3D240AF3F400F0A61C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F44DDA19240AF3F200F0A61C /* ARMuseums */;
+			targetProxy = F44DDA3C240AF3F400F0A61C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F44DDA23240AF3F200F0A61C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F44DDA24240AF3F200F0A61C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F44DDA28240AF3F400F0A61C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F44DDA29240AF3F400F0A61C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F44DDA42240AF3F400F0A61C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F44DDA43240AF3F400F0A61C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F44DDA45240AF3F400F0A61C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARMuseums/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscarodon.ARMuseums.ARMuseums;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F44DDA46240AF3F400F0A61C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARMuseums/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscarodon.ARMuseums.ARMuseums;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F44DDA48240AF3F400F0A61C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARMuseumsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscarodon.ARMuseums.ARMuseumsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARMuseums.app/ARMuseums";
+			};
+			name = Debug;
+		};
+		F44DDA49240AF3F400F0A61C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARMuseumsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscarodon.ARMuseums.ARMuseumsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARMuseums.app/ARMuseums";
+			};
+			name = Release;
+		};
+		F44DDA4B240AF3F400F0A61C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARMuseumsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscarodon.ARMuseums.ARMuseumsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARMuseums;
+			};
+			name = Debug;
+		};
+		F44DDA4C240AF3F400F0A61C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ARMuseumsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscarodon.ARMuseums.ARMuseumsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARMuseums;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F44DDA15240AF3F200F0A61C /* Build configuration list for PBXProject "ARMuseums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44DDA42240AF3F400F0A61C /* Debug */,
+				F44DDA43240AF3F400F0A61C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44DDA44240AF3F400F0A61C /* Build configuration list for PBXNativeTarget "ARMuseums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44DDA45240AF3F400F0A61C /* Debug */,
+				F44DDA46240AF3F400F0A61C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44DDA47240AF3F400F0A61C /* Build configuration list for PBXNativeTarget "ARMuseumsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44DDA48240AF3F400F0A61C /* Debug */,
+				F44DDA49240AF3F400F0A61C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F44DDA4A240AF3F400F0A61C /* Build configuration list for PBXNativeTarget "ARMuseumsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F44DDA4B240AF3F400F0A61C /* Debug */,
+				F44DDA4C240AF3F400F0A61C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F44DDA12240AF3F200F0A61C /* Project object */;
+}
