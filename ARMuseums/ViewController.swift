@@ -14,29 +14,26 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
+    var paitings = [String:Paiting]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set the view's delegate
         sceneView.delegate = self
+        self.loadPaitingData()
         
-        // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
-        
-        // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        
-        // Set the scene to the view
-        sceneView.scene = scene
+        self.preloadWebView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
-
-        // Run the view's session
+        let configuration = ARImageTrackingConfiguration()
+        guard let trankingImages = ARReferenceImage.referenceImages(inGroupNamed: "Paintings", bundle: nil) else {
+            fatalError("No se han podido cargar las imagenes de AR")
+        }
+        configuration.trackingImages = trankingImages
+        
         sceneView.session.run(configuration)
     }
     
@@ -49,14 +46,27 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     // MARK: - ARSCNViewDelegate
     
-/*
+
     // Override to create and configure nodes for anchors added to the view's session.
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        
+        guard let imageAnchor = anchor as? ARImageAnchor else { return nil }
+        guard let paintingName = imageAnchor.referenceImage.name else { return nil }
+        guard let paiting = paitings[paintingName] else { return nil }
+        let plane = SCNPlane(width: imageAnchor.referenceImage.physicalSize.width, height: imageAnchor.referenceImage.physicalSize.height)
+        let planeNode = SCNNode(geometry: plane)
+        planeNode.eulerAngles.x = -.pi/2
+        
+        
         let node = SCNNode()
-     
+        node.opacity = 0
+        node.addChildNode(planeNode)
+        
+        
+        
         return node
     }
-*/
+
     
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
@@ -71,5 +81,31 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func sessionInterruptionEnded(_ session: ARSession) {
         // Reset tracking and/or remove existing anchors if consistent tracking is required
         
+    }
+    
+    //MARK: Manage data
+    func loadPaitingData() {
+        guard let url = Bundle.main.url(forResource: "paitings", withExtension: "json") else {
+            fatalError("No hemos podido conseguir la información de los datos")
+        }
+        
+        guard let jsonData = try? Data(contentsOf: url) else {
+            fatalError("No se ha podido leer la información del JSON")
+        }
+        
+        let jsonDecoder = JSONDecoder()
+        guard let decodedPaitings = try? jsonDecoder.decode([String:Paiting].self, from: jsonData) else {
+            fatalError("Problemas al procesar el archivo JSON")
+        }
+        
+        self.paitings = decodedPaitings
+    }
+    
+    func preloadWebView() {
+        let preload = UIWebView()
+        self.view.addSubview(preload)
+        let request = URLRequest(url: URL(string: "https://es.wikipedia.org/wiki/La_balsa_de_la_Medusa")!)
+        preload.loadRequest(request)
+        preload.removeFromSuperview()
     }
 }

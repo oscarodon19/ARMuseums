@@ -15,6 +15,8 @@
 		F44DDA2A240AF3F400F0A61C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F44DDA28240AF3F400F0A61C /* LaunchScreen.storyboard */; };
 		F44DDA35240AF3F400F0A61C /* ARMuseumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DDA34240AF3F400F0A61C /* ARMuseumsTests.swift */; };
 		F44DDA40240AF3F400F0A61C /* ARMuseumsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DDA3F240AF3F400F0A61C /* ARMuseumsUITests.swift */; };
+		F44DDA4E240AFA6500F0A61C /* paintings.json in Resources */ = {isa = PBXBuildFile; fileRef = F44DDA4D240AFA6500F0A61C /* paintings.json */; };
+		F44DDA52240AFC3A00F0A61C /* Paiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44DDA51240AFC3A00F0A61C /* Paiting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		F44DDA3B240AF3F400F0A61C /* ARMuseumsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARMuseumsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44DDA3F240AF3F400F0A61C /* ARMuseumsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMuseumsUITests.swift; sourceTree = "<group>"; };
 		F44DDA41240AF3F400F0A61C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44DDA4D240AFA6500F0A61C /* paintings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = paintings.json; sourceTree = "<group>"; };
+		F44DDA51240AFC3A00F0A61C /* Paiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paiting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +103,12 @@
 		F44DDA1C240AF3F200F0A61C /* ARMuseums */ = {
 			isa = PBXGroup;
 			children = (
+				F44DDA50240AFC2300F0A61C /* Model */,
+				F44DDA4F240AFAFB00F0A61C /* Resources */,
 				F44DDA1D240AF3F200F0A61C /* AppDelegate.swift */,
 				F44DDA1F240AF3F200F0A61C /* art.scnassets */,
 				F44DDA21240AF3F200F0A61C /* ViewController.swift */,
 				F44DDA23240AF3F200F0A61C /* Main.storyboard */,
-				F44DDA26240AF3F400F0A61C /* Assets.xcassets */,
 				F44DDA28240AF3F400F0A61C /* LaunchScreen.storyboard */,
 				F44DDA2B240AF3F400F0A61C /* Info.plist */,
 			);
@@ -126,6 +131,23 @@
 				F44DDA41240AF3F400F0A61C /* Info.plist */,
 			);
 			path = ARMuseumsUITests;
+			sourceTree = "<group>";
+		};
+		F44DDA4F240AFAFB00F0A61C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F44DDA26240AF3F400F0A61C /* Assets.xcassets */,
+				F44DDA4D240AFA6500F0A61C /* paintings.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F44DDA50240AFC2300F0A61C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F44DDA51240AFC3A00F0A61C /* Paiting.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44DDA20240AF3F200F0A61C /* art.scnassets in Resources */,
+				F44DDA4E240AFA6500F0A61C /* paintings.json in Resources */,
 				F44DDA2A240AF3F400F0A61C /* LaunchScreen.storyboard in Resources */,
 				F44DDA27240AF3F400F0A61C /* Assets.xcassets in Resources */,
 				F44DDA25240AF3F200F0A61C /* Main.storyboard in Resources */,
@@ -260,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44DDA52240AFC3A00F0A61C /* Paiting.swift in Sources */,
 				F44DDA22240AF3F200F0A61C /* ViewController.swift in Sources */,
 				F44DDA1E240AF3F200F0A61C /* AppDelegate.swift in Sources */,
 			);
@@ -440,7 +464,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.oscarodon.ARMuseums.ARMuseums;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscarodon.ARMuseums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,7 +481,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.oscarodon.ARMuseums.ARMuseums;
+				PRODUCT_BUNDLE_IDENTIFIER = com.oscarodon.ARMuseums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
